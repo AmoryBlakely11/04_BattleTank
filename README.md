@@ -1,2 +1,2 @@
-# 04_BattleTank
+# BattleTank
 Head-to-head tank fight with simple AI.
