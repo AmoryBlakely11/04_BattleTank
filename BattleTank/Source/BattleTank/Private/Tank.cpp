@@ -2,8 +2,9 @@
 
 
 #include "Tank.h"
+#include "TankAimingComponent.h"
 
-class UTankBarrel;
+
 
 // Sets default values
 ATank::ATank()
