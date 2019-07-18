@@ -4,9 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "Kismet/GameplayStatics.h"
-#include "TankBarrel.h"
 #include "Components/ActorComponent.h"
 #include "TankAimingComponent.generated.h"
+
+class UTankBarrel;
+class UTankTurret;
 
 
 //Holds barrel's parameters and Elevate() method
@@ -20,6 +22,7 @@ public:
 	UTankAimingComponent();
 	void AimAt(FVector WorldSpace, float LaunchSpeed);
 	void SetBarrelReference(UTankBarrel* BarrelToSet);
+	void SetTurretReference(UTankTurret* TurretToSet);
 	void MoveBarrelTowards(FVector AimDirection);
 
 protected:
@@ -32,5 +35,6 @@ public:
 
 private:
 	UTankBarrel* Barrel = nullptr;
+	UTankTurret* Turret = nullptr;
 		
 };
