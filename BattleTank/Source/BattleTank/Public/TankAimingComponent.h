@@ -57,5 +57,6 @@ private:
 	TSubclassOf<AProjectile> ProjectileBlueprint;
 	double LastFireTime = 0;
 	FVector AimDirection;
+	UPROPERTY(EditDefaultsOnly, Category = "Firing")
 	int32 RoundsLeft = 3;
 };
